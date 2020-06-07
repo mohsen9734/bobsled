@@ -1,7 +1,9 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
 }
 
 body {
@@ -15,84 +17,84 @@ body {
 
 .header {
     background-image: linear-gradient(to right, #3F6BFE, #4CD3E3);
-    border: 8px solid red;
 }
 
 .header_wrapper {
     display: flex;
     flex-direction: column;
-    border: 8px solid green;
 }
 
 .header_row {
     display: flex;
-    justify-content: space-between;
-    padding: 0 1em;
-    border: 8px solid orangered;
+    justify-content: space-around;
+    border: solid;
 }
 
 .header_logo {
-    width: 27%;
+    width: 18%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 8px solid indigo;
 }
 
 .header_nav {
     display: flex;
-    border: 8px solid gold;
 }
 
 .header_nav_list {
     display: flex;
-    justify-content: space-evenly;
     list-style-type: none;
-    border: 8px solid violet;
 }
 
 .header_nav_item {
     display: flex;
-    /* margin: 0 1em; */
-    border: 8px solid brown;
 }
 
 .header_nav_link {
-    text-decoration: none;
     text-transform: uppercase;
     font-size: 1.5em;
     color: white;
     padding: .5em;
     text-align: center;
-    border: 8px solid burlywood;
 }
 
 .header_content {
+    width: 87%;
     display: flex;
     flex-direction: column;
-    padding: 9em 0;
-    border: 8px solid thistle;
+    align-items: flex-start;
+    padding: 11em 0;
+    color: white;
 }
 
-@media (min-width:48em) {
-
-    /* .header_wrapper {
-        display: flex;
-        flex-direction: column;
-        background-image: url(../image/2.png);
-        background-position: right bottom;
-        background-repeat: no-repeat;
-        background-size: 50%;
-        border: 8px solid green;
-    } */
+.header_content h2 {
+    font-size: 2.8em;
+    text-transform: uppercase;
 }
+
+.header_content p {
+    font-size: 1.4em;
+    margin: 1em 0 2em;
+}
+
+.header_content a {
+    color: white;
+    padding: .8em 3em;
+    border-radius: 3em;
+    border: 2px solid white;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+@media (min-width:48em) {}
 
 /* ------------------End Header------------------ */
 /* ------------------Start Main------------------ */
-@media (min-width:48em) {}
+/* @media (min-width:48em) {} */
 
 /* ------------------End Main-------------------- */
 /* ------------------Start Footer------------------ */
-@media (min-width:48em) {}
+/* @media (min-width:48em) {} */
 
 /* ------------------End Footer------------------ */
