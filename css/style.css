@@ -13,7 +13,7 @@ body {
 
 @media (min-width:65em) {
     body {
-        padding: 6em 3em;
+        padding: 6em 10em;
     }
 }
 
@@ -256,7 +256,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 7em;
+    padding: 0 3em;
     flex-basis: 100%;
 }
 
@@ -273,8 +273,8 @@ body {
 }
 
 .exlusive_box p {
-    font-size: 1.1em;
-    padding: 1em;
+    font-size: 1em;
+    padding: 1em 5em;
 }
 
 .exlusive_box p::first-letter {
@@ -304,7 +304,11 @@ body {
         justify-content: center;
         text-align: center;
         flex-basis: 100%;
-        padding: 0 10em;
+        padding: 0em 10em 2em;
+    }
+
+    .exclusive_content p {
+        padding: 1em 4em;
     }
 
     .exlusive_box {
@@ -313,12 +317,193 @@ body {
         align-items: center;
         text-align: center;
         flex-basis: 33.33%;
-        padding: 0 0em;
+        padding: 0em;
+        margin: 0 .5em;
     }
+
+    .exlusive_box img {
+        width: 100%;
+        padding: 2em 0;
+    }
+
+    .exlusive_box p {
+        font-size: 1em;
+        padding: 1em 1.8em;
+    }
+
 }
 
 /* ------------------End exclusive------------------ */
-.
+
+/* ------------------Start  Remarkable------------------ */
+.remarkable {
+    background-color: white;
+}
+
+.remarkable_wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 6em 10em;
+}
+
+.remarkable_row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.remarkable_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-basis: 100%;
+    padding: 0 5em 3em;
+}
+
+.remarkable_content h2 {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 2.7em;
+}
+
+.remarkable_content p {
+    font-size: 1.5em;
+    padding: .5em 0em;
+    color: #a19f9f;
+}
+
+.remarkable_box {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+    box-shadow: 0px 0px 5px 5px #f3f3f3, 0px 0px 5px 5px #fefefe;
+}
+
+.remarkable_box:nth-child(even) {
+    flex-direction: column-reverse;
+}
+
+.remarkable_box_img {
+    display: flex;
+    flex-direction: row;
+}
+
+.remarkable_box_img img {
+    width: 100%;
+}
+
+.remarkable_box_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3em 5em;
+}
+
+.remarkable_box_info h3 {
+    text-transform: capitalize;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.remarkable_box_info p {
+    color: #a19f9f;
+    font-size: 1.3em;
+    padding: 1em 0;
+}
+
+.remarkable_box_info a {
+    text-decoration: none;
+    color: #46A0F1;
+    padding: .6em 2em;
+    border-radius: 3em;
+    border: 1px solid #d3cece;
+    text-transform: capitalize;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+@media(min-width:65em) {
+    .remarkable {
+        background-color: white;
+    }
+
+    .remarkable_wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 6em 1em;
+    }
+
+    .remarkable_row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .remarkable_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        flex-basis: 100%;
+        padding: 0em 14em 5em;
+    }
+
+    .remarkable_content h2 {
+        font-size: 2em;
+    }
+
+    .remarkable_content p {
+        font-size: 1em;
+    }
+
+    .remarkable_box {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .remarkable_box:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .remarkable_box_img {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+    }
+
+    .remarkable_box_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 40%;
+        padding: 4em 3em;
+    }
+
+    .remarkable_box:nth-child(even) .remarkable_box_img {
+        width: 40%;
+    }
+    .remarkable_box:nth-child(even) .remarkable_box_info{
+        width: 60%;
+    }
+
+    .remarkable_box_info h3 {
+        font-size: 1.5em;
+    }
+
+    .remarkable_box_info p {
+        font-size: 1em;
+    }
+}
+
+/* ------------------End Remarkable------------------ */
+
 /* ------------------End Main-------------------- */
 /* ------------------Start Footer------------------ */
 /* @media (min-width:65em) {} */
